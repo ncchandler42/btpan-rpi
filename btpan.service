@@ -1,0 +1,9 @@
+[Unit]
+After=bluetooth.service
+PartOf=bluetooth.service
+
+[Service]
+ExecStart=/usr/local/sbin/btpan
+
+[Install]
+WantedBy=bluetooth.target
