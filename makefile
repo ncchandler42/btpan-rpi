@@ -6,3 +6,4 @@ install:
 	sudo cp ./bluezutils.py /usr/local/lib/python3.9/dist-packages
 	sudo cp ./btpan.service /etc/systemd/system/
 	sudo systemctl enable btpan.service
+	sudo chmod +x /usr/local/sbin/btpan
