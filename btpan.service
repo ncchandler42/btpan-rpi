@@ -3,7 +3,7 @@ After=bluetooth.service
 PartOf=bluetooth.service
 
 [Service]
-ExecStart=/usr/local/sbin/btpan
+ExecStart=/usr/local/bin/btpan
 
 [Install]
 WantedBy=bluetooth.target
