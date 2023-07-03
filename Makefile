@@ -5,3 +5,9 @@ install:
 	sudo install -m 755 ./btpan /usr/local/bin/
 	sudo install -m 644 ./btpan.service /etc/systemd/user/
 	systemctl --user enable btpan.service
+
+uninstall:
+	sudo rm /etc/NetworkManager/system-connections/pan0.nmconnection
+	sudo rm /usr/local/bin/btpan
+	systemctl --user disable btpan.service
+	sudo rm /etc/systemd/user/btpan.service
